@@ -1,0 +1,9 @@
+import sys
+_folder = SCRIPT_DIRECTORY_PLACEHOLDER
+if _folder not in sys.path:
+    sys.path.append(_folder)
+for _module in ('CodexCollabRuntime', 'CodexCollabCommand'):
+    if _module in sys.modules:
+        del sys.modules[_module]
+import CodexCollabRuntime
+CodexCollabRuntime.run()

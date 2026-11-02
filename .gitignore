@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+collab/state/
+collab/backups/
+recovery/output/
+*.flp
+*.mid
+*.midi
+*.fst
+*.fsc
+*.env
